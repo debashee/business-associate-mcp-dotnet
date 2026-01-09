@@ -1,0 +1,649 @@
+{
+  "McpServerSample\\README.md": {
+    "filename": "README.md",
+    "path": "McpServerSample\\README.md",
+    "version": "1.1",
+    "chunks": {
+      "113e4a": {
+        "user": "Debashee Tarai",
+        "model": "claude-opus-4@20250514",
+        "timestamp": 1767954711,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "1.14.0",
+        "source": "agent",
+        "type": "agentEditTool",
+        "hash": "74bf2c37",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": true
+      },
+      "2d8d22": {
+        "user": "Debashee Tarai",
+        "model": "claude-opus-4@20250514",
+        "timestamp": 1767954711,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "1.14.0",
+        "source": "agent",
+        "type": "agentEditTool",
+        "hash": "084c2512",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": true
+      },
+      "8aece7": {
+        "user": "Debashee Tarai",
+        "model": "claude-opus-4@20250514",
+        "timestamp": 1767954711,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "1.14.0",
+        "source": "agent",
+        "type": "agentEditTool",
+        "hash": "e17c7b20",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": true
+      },
+      "a922cb": {
+        "user": "Debashee Tarai",
+        "model": "claude-opus-4@20250514",
+        "timestamp": 1767954711,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "1.14.0",
+        "source": "agent",
+        "type": "agentEditTool",
+        "hash": "332247fc",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "8aece7",
+        "hash": "487ec453",
+        "encoded": "#%20MCP%20Server%20Sample%20-%20.NET%20Core%20Web%20API",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "8aece7",
+        "hash": "b87b86e0",
+        "encoded": "This%20is%20a%20sample%20.NET%20Core%20Web%20API%20application%20that%20demonstrates%20how%20to%20use%20the%20ModelContextProtocol%20package%20to%20create%20an%20MCP%20(Model%20Context%20Protocol)%20server.",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "8aece7",
+        "hash": "c222b0f5",
+        "encoded": "##%20Features",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "8aece7",
+        "hash": "2535b89c",
+        "encoded": "-%20**Calculator%20Tools**:%20Basic%20arithmetic%20operations%20(add,%20subtract,%20multiply,%20divide)",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "8aece7",
+        "hash": "19c3ae9b",
+        "encoded": "-%20**Business%20Associate%20Tools**:%20Complete%20CRUD%20operations%20for%20managing%20business%20associates",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "8aece7",
+        "hash": "1ce87124",
+        "encoded": "-%20Get%20business%20associates%20by%20type",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "8aece7",
+        "hash": "c1a41476",
+        "encoded": "-%20Create%20new%20business%20associates",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "8aece7",
+        "hash": "c435e7a0",
+        "encoded": "-%20Update%20existing%20business%20associates",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "8aece7",
+        "hash": "65d19918",
+        "encoded": "-%20Delete%20business%20associates",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "8aece7",
+        "hash": "dbfd1a7c",
+        "encoded": "##%20Project%20Structure",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "8aece7",
+        "hash": "79694f27",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "8aece7",
+        "hash": "72fd87cf",
+        "encoded": "McpServerSample/",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "8aece7",
+        "hash": "fe0c9e73",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20Models/",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "8aece7",
+        "hash": "94d67dba",
+        "encoded": "%E2%94%82%20%20%20%E2%94%94%E2%94%80%E2%94%80%20BusinessAssociate.cs%20%20#%20Business%20Associate%20model%20and%20API%20response%20classes",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "8aece7",
+        "hash": "4bf2a121",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20Tools/",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "8aece7",
+        "hash": "bf26b08e",
+        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20CalculatorTools.cs%20%20%20%20#%20Calculator%20operations%20decorated%20with%20MCP%20attributes",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "8aece7",
+        "hash": "81c49e79",
+        "encoded": "%E2%94%82%20%20%20%E2%94%94%E2%94%80%E2%94%80%20BusinessAssociateTools.cs%20#%20Business%20Associate%20CRUD%20operations",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "8aece7",
+        "hash": "5d38b3b3",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20Program.cs%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Application%20startup%20and%20MCP%20server%20configuration",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "8aece7",
+        "hash": "662d65e2",
+        "encoded": "%E2%94%94%E2%94%80%E2%94%80%20McpServerSample.csproj%20%20%20%20#%20Project%20file%20with%20ModelContextProtocol%20package",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "8aece7",
+        "hash": "149ea669",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "2d8d22",
+        "hash": "06fc5b9d",
+        "encoded": "##%20How%20It%20Works",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "2d8d22",
+        "hash": "7ce901f9",
+        "encoded": "###%201.%20Tool%20Classes",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "2d8d22",
+        "hash": "56a218db",
+        "encoded": "Tool%20classes%20are%20decorated%20with%20the%20%60%5BMcpServerToolType%5D%60%20attribute:",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "2d8d22",
+        "hash": "152ebfe7",
+        "encoded": "%60%60%60csharp",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "2d8d22",
+        "hash": "c971575b",
+        "encoded": "%5BMcpServerToolType%5D",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "2d8d22",
+        "hash": "c8dde3e2",
+        "encoded": "public%20class%20CalculatorTools",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "2d8d22",
+        "hash": "29bb9b3e",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "2d8d22",
+        "hash": "901188da",
+        "encoded": "//%20Tool%20methods...",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "2d8d22",
+        "hash": "92368879",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "2d8d22",
+        "hash": "54b98e4e",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "2d8d22",
+        "hash": "06c9fc7c",
+        "encoded": "###%202.%20Tool%20Methods",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "2d8d22",
+        "hash": "d96519f6",
+        "encoded": "Individual%20tool%20methods%20are%20decorated%20with%20the%20%60%5BMcpServerTool%5D%60%20attribute%20and%20%60%5BDescription%5D%60%20attribute%20from%20%60System.ComponentModel%60:",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "2d8d22",
+        "hash": "023db39e",
+        "encoded": "%60%60%60csharp",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "2d8d22",
+        "hash": "8a439bd5",
+        "encoded": "%5BMcpServerTool,%20Description(%22Adds%20two%20numbers%20together%22)%5D",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "2d8d22",
+        "hash": "b0938497",
+        "encoded": "public%20double%20Add(",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "2d8d22",
+        "hash": "53ff58d9",
+        "encoded": "%5BDescription(%22First%20number%22)%5D",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "2d8d22",
+        "hash": "a08abf7b",
+        "encoded": "double%20a,",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "2d8d22",
+        "hash": "dcd1ed17",
+        "encoded": "%5BDescription(%22Second%20number%22)%5D",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "2d8d22",
+        "hash": "9a1ca1e2",
+        "encoded": "double%20b)",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "2d8d22",
+        "hash": "836ab946",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "2d8d22",
+        "hash": "f3aa5edb",
+        "encoded": "return%20a%20+%20b;",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "2d8d22",
+        "hash": "c46ffadb",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "2d8d22",
+        "hash": "3b0706cd",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "2d8d22",
+        "hash": "56a71d32",
+        "encoded": "###%203.%20Configuration",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "2d8d22",
+        "hash": "205eb9e7",
+        "encoded": "In%20%60Program.cs%60,%20the%20MCP%20server%20is%20configured%20and%20registered:",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "2d8d22",
+        "hash": "376a2124",
+        "encoded": "%60%60%60csharp",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "2d8d22",
+        "hash": "36535d33",
+        "encoded": "//%20Add%20services%20to%20the%20container",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "2d8d22",
+        "hash": "f5e8b382",
+        "encoded": "builder.Services.AddHttpClient();%20//%20Register%20HttpClient%20for%20DI",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "2d8d22",
+        "hash": "57a8f5c2",
+        "encoded": "//%20Register%20MCP%20Server%20with%20HTTP%20transport%20and%20tools%20from%20assembly",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "2d8d22",
+        "hash": "9f162920",
+        "encoded": "builder.Services.AddMcpServer()",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "2d8d22",
+        "hash": "0509cf8c",
+        "encoded": ".WithHttpTransport()",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "2d8d22",
+        "hash": "4de6fc64",
+        "encoded": ".WithToolsFromAssembly();",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "2d8d22",
+        "hash": "99a9ca47",
+        "encoded": "//%20Register%20tool%20classes%20as%20singletons%20(optional,%20but%20recommended)",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "2d8d22",
+        "hash": "fa34e51a",
+        "encoded": "builder.Services.AddSingleton%3CCalculatorTools%3E();",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "2d8d22",
+        "hash": "87e95d03",
+        "encoded": "builder.Services.AddSingleton%3CBusinessAssociateTools%3E();",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "2d8d22",
+        "hash": "147243b4",
+        "encoded": "//%20Map%20MCP%20Server%20endpoints",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "2d8d22",
+        "hash": "b3553193",
+        "encoded": "app.MapMcp();",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "2d8d22",
+        "hash": "3468b825",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "a922cb",
+        "hash": "865a3fa2",
+        "encoded": "##%20Configuration",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "a922cb",
+        "hash": "a15f091c",
+        "encoded": "###%20Business%20Associate%20API%20Endpoint",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "a922cb",
+        "hash": "a32dcfad",
+        "encoded": "The%20Business%20Associate%20Tools%20connect%20to%20an%20API%20endpoint%20configured%20in%20the%20%60BusinessAssociateTools.cs%60%20file:",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "a922cb",
+        "hash": "98d2762e",
+        "encoded": "%60%60%60csharp",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "a922cb",
+        "hash": "bc457b13",
+        "encoded": "private%20readonly%20string%20_baseUrl%20=%20%22http://localhost:3000%22;",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "a922cb",
+        "hash": "54aeafe1",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "a922cb",
+        "hash": "d96bd821",
+        "encoded": "You%20can%20modify%20this%20URL%20to%20point%20to%20your%20Business%20Associate%20API%20service.%20The%20API%20is%20expected%20to%20support%20the%20following%20endpoints:",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "a922cb",
+        "hash": "bb1c2ad7",
+        "encoded": "-%20%60GET%20/api/v1/%7BbaType%7D%60%20-%20Get%20all%20business%20associates%20of%20a%20specific%20type",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "a922cb",
+        "hash": "8788ae74",
+        "encoded": "-%20%60POST%20/api/v1/%7BbaType%7D%60%20-%20Create%20a%20new%20business%20associate",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "a922cb",
+        "hash": "0dbd17aa",
+        "encoded": "-%20%60PUT%20/api/v1/%7BbaType%7D/%7BbaId%7D%60%20-%20Update%20an%20existing%20business%20associate",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "a922cb",
+        "hash": "e22bf5e9",
+        "encoded": "-%20%60DELETE%20/api/v1/%7BbaType%7D/%7BbaId%7D%60%20-%20Delete%20a%20business%20associate",
+        "prevChunkIds": []
+      },
+      "138": {
+        "chunkId": "a922cb",
+        "hash": "2136b09d",
+        "encoded": "##%20Notes",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "a922cb",
+        "hash": "38318ceb",
+        "encoded": "-%20The%20ModelContextProtocol%20package%20is%20currently%20in%20preview",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "a922cb",
+        "hash": "0bfaa2f7",
+        "encoded": "-%20The%20MCP%20server%20endpoints%20are%20automatically%20configured%20when%20calling%20%60app.MapMcp()%60",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "a922cb",
+        "hash": "ff99fc60",
+        "encoded": "-%20Tool%20classes%20should%20be%20registered%20in%20the%20dependency%20injection%20container",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "a922cb",
+        "hash": "8f6d85ef",
+        "encoded": "-%20The%20Business%20Associate%20Tools%20require%20an%20HttpClient%20service,%20which%20is%20registered%20in%20Program.cs",
+        "prevChunkIds": []
+      },
+      "144": {
+        "chunkId": "a922cb",
+        "hash": "db0ca6f4",
+        "encoded": "-%20The%20API%20responses%20are%20expected%20to%20follow%20the%20structure%20defined%20in%20the%20response%20classes%20(CreateBusinessAssociateResponse,%20UpdateBusinessAssociateResponse,%20etc.)",
+        "prevChunkIds": []
+      },
+      "188": {
+        "chunkId": "113e4a",
+        "hash": "33a4dc05",
+        "encoded": "##%20Available%20Tools",
+        "prevChunkIds": []
+      },
+      "190": {
+        "chunkId": "113e4a",
+        "hash": "6968b8e0",
+        "encoded": "###%20Calculator%20Tools",
+        "prevChunkIds": []
+      },
+      "191": {
+        "chunkId": "113e4a",
+        "hash": "7ea1024f",
+        "encoded": "-%20**add**:%20Adds%20two%20numbers%20together",
+        "prevChunkIds": []
+      },
+      "192": {
+        "chunkId": "113e4a",
+        "hash": "5abbc20c",
+        "encoded": "-%20**subtract**:%20Subtracts%20the%20second%20number%20from%20the%20first",
+        "prevChunkIds": []
+      },
+      "193": {
+        "chunkId": "113e4a",
+        "hash": "5090168d",
+        "encoded": "-%20**multiply**:%20Multiplies%20two%20numbers",
+        "prevChunkIds": []
+      },
+      "194": {
+        "chunkId": "113e4a",
+        "hash": "79ee24f4",
+        "encoded": "-%20**divide**:%20Divides%20the%20first%20number%20by%20the%20second",
+        "prevChunkIds": []
+      },
+      "196": {
+        "chunkId": "113e4a",
+        "hash": "304879a3",
+        "encoded": "###%20Business%20Associate%20Tools",
+        "prevChunkIds": []
+      },
+      "197": {
+        "chunkId": "113e4a",
+        "hash": "c59a3cc0",
+        "encoded": "-%20**GetBusinessAssociates**:%20Get%20business%20associates%20by%20type%20(vendor,%20customer,%20etc.)",
+        "prevChunkIds": []
+      },
+      "198": {
+        "chunkId": "113e4a",
+        "hash": "f08bdc72",
+        "encoded": "-%20**CreateBusinessAssociate**:%20Create%20a%20new%20business%20associate%20with%20the%20following%20parameters:",
+        "prevChunkIds": []
+      },
+      "199": {
+        "chunkId": "113e4a",
+        "hash": "0986d83d",
+        "encoded": "-%20%60baType%60:%20Business%20Associate%20Type%20(e.g.,%20'vendor',%20'customer')",
+        "prevChunkIds": []
+      },
+      "200": {
+        "chunkId": "113e4a",
+        "hash": "7ecd952b",
+        "encoded": "-%20%60baName%60:%20Business%20Associate%20Name",
+        "prevChunkIds": []
+      },
+      "201": {
+        "chunkId": "113e4a",
+        "hash": "4d785701",
+        "encoded": "-%20%60sapVendor%60:%20SAP%20Vendor%20ID%20(optional)",
+        "prevChunkIds": []
+      },
+      "202": {
+        "chunkId": "113e4a",
+        "hash": "6f778011",
+        "encoded": "-%20%60sapCustomer%60:%20SAP%20Customer%20ID%20(optional)",
+        "prevChunkIds": []
+      },
+      "203": {
+        "chunkId": "113e4a",
+        "hash": "43f52c12",
+        "encoded": "-%20%60sapCompanyCode%60:%20SAP%20Company%20Code%20(optional)",
+        "prevChunkIds": []
+      },
+      "204": {
+        "chunkId": "113e4a",
+        "hash": "cc21951e",
+        "encoded": "-%20**UpdateBusinessAssociate**:%20Update%20an%20existing%20business%20associate%20with%20the%20following%20parameters:",
+        "prevChunkIds": []
+      },
+      "205": {
+        "chunkId": "113e4a",
+        "hash": "35c24a36",
+        "encoded": "-%20%60baType%60:%20Business%20Associate%20Type",
+        "prevChunkIds": []
+      },
+      "206": {
+        "chunkId": "113e4a",
+        "hash": "f39444eb",
+        "encoded": "-%20%60baId%60:%20Business%20Associate%20ID",
+        "prevChunkIds": []
+      },
+      "207": {
+        "chunkId": "113e4a",
+        "hash": "a5e8c2ae",
+        "encoded": "-%20%60baName%60:%20Updated%20Business%20Associate%20Name%20(optional)",
+        "prevChunkIds": []
+      },
+      "208": {
+        "chunkId": "113e4a",
+        "hash": "574eae50",
+        "encoded": "-%20%60sapVendor%60:%20Updated%20SAP%20Vendor%20ID%20(optional)",
+        "prevChunkIds": []
+      },
+      "209": {
+        "chunkId": "113e4a",
+        "hash": "6371ebc2",
+        "encoded": "-%20%60sapCustomer%60:%20Updated%20SAP%20Customer%20ID%20(optional)",
+        "prevChunkIds": []
+      },
+      "210": {
+        "chunkId": "113e4a",
+        "hash": "96c01f7b",
+        "encoded": "-%20%60sapCompanyCode%60:%20Updated%20SAP%20Company%20Code%20(optional)",
+        "prevChunkIds": []
+      },
+      "211": {
+        "chunkId": "113e4a",
+        "hash": "ebe310d1",
+        "encoded": "-%20**DeleteBusinessAssociate**:%20Delete%20a%20business%20associate%20by%20type%20and%20ID",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

@@ -1,0 +1,775 @@
+{
+  "McpServerSample\\Tools\\BusinessAssociateTools.cs": {
+    "filename": "BusinessAssociateTools.cs",
+    "path": "McpServerSample\\Tools\\BusinessAssociateTools.cs",
+    "version": "1.1",
+    "chunks": {
+      "90d440": {
+        "user": "Debashee Tarai",
+        "model": "claude-opus-4@20250514",
+        "timestamp": 1767954710,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "1.14.0",
+        "source": "agent",
+        "type": "agentEditTool",
+        "hash": "77935020",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "90d440",
+        "hash": "c6ec0311",
+        "encoded": "using%20ModelContextProtocol.Server;",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "90d440",
+        "hash": "4e0a051e",
+        "encoded": "using%20System.ComponentModel;",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "90d440",
+        "hash": "c352d6c3",
+        "encoded": "using%20System.Text.Json;%20//%20Added%20for%20JSON%20deserialization",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "90d440",
+        "hash": "1d927f3f",
+        "encoded": "using%20System.Net.Http;%20//%20Added%20for%20HttpClient",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "90d440",
+        "hash": "7008b207",
+        "encoded": "using%20McpServerSample.Models;%20//%20Added%20to%20access%20BusinessAssociate%20record",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "90d440",
+        "hash": "2c9f5224",
+        "encoded": "using%20System.Collections.Generic;%20//%20Added%20for%20List%3CT%3E",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "90d440",
+        "hash": "e71b7d01",
+        "encoded": "using%20System.Text;%20//%20Added%20for%20StringContent",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "90d440",
+        "hash": "f94b9623",
+        "encoded": "namespace%20McpServerSample.Tools;",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "90d440",
+        "hash": "a5b41575",
+        "encoded": "%5BMcpServerToolType%5D",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "90d440",
+        "hash": "d27e7b92",
+        "encoded": "public%20class%20BusinessAssociateTools",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "90d440",
+        "hash": "ff0974b5",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "90d440",
+        "hash": "70cde705",
+        "encoded": "private%20readonly%20HttpClient%20_httpClient;",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "90d440",
+        "hash": "016483fb",
+        "encoded": "private%20readonly%20string%20_baseUrl%20=%20%22http://localhost:3000%22;%20//%20https://business-associate-nodejs-a2hrenh7b6gmgyay.centralus-01.azurewebsites.net",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "90d440",
+        "hash": "04135d7b",
+        "encoded": "public%20BusinessAssociateTools(HttpClient%20httpClient)",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "90d440",
+        "hash": "1871cca4",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "90d440",
+        "hash": "de39cc0a",
+        "encoded": "_httpClient%20=%20httpClient;",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "90d440",
+        "hash": "ee39c532",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "90d440",
+        "hash": "798aeb14",
+        "encoded": "%5BMcpServerTool,%20Description(%22Get%20the%20business%20associate%20details%20based%20on%20the%20type%22)%5D",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "90d440",
+        "hash": "3b30dbf0",
+        "encoded": "public%20async%20Task%3CList%3CBusinessAssociate%3E%3E%20GetBusinessAssociates(",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "90d440",
+        "hash": "85edaa3f",
+        "encoded": "%5BDescription(%22Business%20Associate%20Type%22)%5D",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "90d440",
+        "hash": "c7030573",
+        "encoded": "string%20baType)",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "90d440",
+        "hash": "771f2e9b",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "90d440",
+        "hash": "e8c79f39",
+        "encoded": "var%20response%20=%20await%20_httpClient.GetAsync($%22%7B_baseUrl%7D/api/v1/%7BbaType%7D%22);",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "90d440",
+        "hash": "228140e3",
+        "encoded": "response.EnsureSuccessStatusCode();",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "90d440",
+        "hash": "9c077c04",
+        "encoded": "var%20content%20=%20await%20response.Content.ReadAsStringAsync();",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "90d440",
+        "hash": "5bec6338",
+        "encoded": "var%20baResponse%20=%20JsonSerializer.Deserialize%3CBusinessAssociateApiResponse%3E(content,%20new%20JsonSerializerOptions%20%7B%20PropertyNameCaseInsensitive%20=%20true%20%7D);",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "90d440",
+        "hash": "b85d7286",
+        "encoded": "if(baResponse%20is%20null%20%7C%7C%20baResponse?.Success%20==%20false)",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "90d440",
+        "hash": "4ad748de",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "90d440",
+        "hash": "38bcdb04",
+        "encoded": "return%20%5B%5D;",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "90d440",
+        "hash": "b8d59d8e",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "90d440",
+        "hash": "0ad3dd20",
+        "encoded": "var%20businessAssociates%20=%20baResponse?.Data;",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "90d440",
+        "hash": "8eae8f10",
+        "encoded": "return%20businessAssociates%20??%20%5B%5D;",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "90d440",
+        "hash": "1b754c76",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "90d440",
+        "hash": "102e86e5",
+        "encoded": "%5BMcpServerTool,%20Description(%22Create%20a%20new%20business%20associate%22)%5D",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "90d440",
+        "hash": "002d4c05",
+        "encoded": "public%20async%20Task%3CBusinessAssociate?%3E%20CreateBusinessAssociate(",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "90d440",
+        "hash": "171883d2",
+        "encoded": "%5BDescription(%22Business%20Associate%20Type%20(e.g.,%20'vendor',%20'customer')%22)%5D",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "90d440",
+        "hash": "f16bb63f",
+        "encoded": "string%20baType,",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "90d440",
+        "hash": "7d9fa6f9",
+        "encoded": "%5BDescription(%22Business%20Associate%20Name%22)%5D",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "90d440",
+        "hash": "de850341",
+        "encoded": "string%20baName,",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "90d440",
+        "hash": "5eb6f07b",
+        "encoded": "%5BDescription(%22SAP%20Vendor%20ID%20(optional)%22)%5D",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "90d440",
+        "hash": "29591eb3",
+        "encoded": "string?%20sapVendor%20=%20null,",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "90d440",
+        "hash": "952ee4b3",
+        "encoded": "%5BDescription(%22SAP%20Customer%20ID%20(optional)%22)%5D",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "90d440",
+        "hash": "74c0d911",
+        "encoded": "string?%20sapCustomer%20=%20null,",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "90d440",
+        "hash": "fc92b6bb",
+        "encoded": "%5BDescription(%22SAP%20Company%20Code%20(optional)%22)%5D",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "90d440",
+        "hash": "f2a4ffc2",
+        "encoded": "int?%20sapCompanyCode%20=%20null)",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "90d440",
+        "hash": "f73b2881",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "90d440",
+        "hash": "3e7831ce",
+        "encoded": "var%20newBusinessAssociate%20=%20new",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "90d440",
+        "hash": "6b13c1a7",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "90d440",
+        "hash": "93ce06e3",
+        "encoded": "BAName%20=%20baName,",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "90d440",
+        "hash": "995686ef",
+        "encoded": "SAPVendor%20=%20sapVendor,",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "90d440",
+        "hash": "a566440e",
+        "encoded": "SAPCustomer%20=%20sapCustomer,",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "90d440",
+        "hash": "bbe29fe3",
+        "encoded": "SAPCompanyCode%20=%20sapCompanyCode",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "90d440",
+        "hash": "cbe7488b",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "90d440",
+        "hash": "250a6c49",
+        "encoded": "var%20json%20=%20JsonSerializer.Serialize(newBusinessAssociate);",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "90d440",
+        "hash": "47668520",
+        "encoded": "var%20content%20=%20new%20StringContent(json,%20Encoding.UTF8,%20%22application/json%22);",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "90d440",
+        "hash": "c49ea0da",
+        "encoded": "var%20response%20=%20await%20_httpClient.PostAsync($%22%7B_baseUrl%7D/api/v1/%7BbaType%7D%22,%20content);",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "90d440",
+        "hash": "40f6098c",
+        "encoded": "response.EnsureSuccessStatusCode();",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "90d440",
+        "hash": "683c5cd9",
+        "encoded": "var%20responseContent%20=%20await%20response.Content.ReadAsStringAsync();",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "90d440",
+        "hash": "0d2ffcd1",
+        "encoded": "var%20createResponse%20=%20JsonSerializer.Deserialize%3CCreateBusinessAssociateResponse%3E(responseContent,%20new%20JsonSerializerOptions%20%7B%20PropertyNameCaseInsensitive%20=%20true%20%7D);",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "90d440",
+        "hash": "d0e51c6b",
+        "encoded": "return%20createResponse?.Data;",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "90d440",
+        "hash": "f064f9d6",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "90d440",
+        "hash": "0d96150c",
+        "encoded": "%5BMcpServerTool,%20Description(%22Update%20an%20existing%20business%20associate%22)%5D",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "90d440",
+        "hash": "581901e4",
+        "encoded": "public%20async%20Task%3CBusinessAssociate?%3E%20UpdateBusinessAssociate(",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "90d440",
+        "hash": "6cc2527f",
+        "encoded": "%5BDescription(%22Business%20Associate%20Type%20(e.g.,%20'vendor',%20'customer')%22)%5D",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "90d440",
+        "hash": "5642b363",
+        "encoded": "string%20baType,",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "90d440",
+        "hash": "f9df7277",
+        "encoded": "%5BDescription(%22Business%20Associate%20ID%22)%5D",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "90d440",
+        "hash": "06bab637",
+        "encoded": "int%20baId,",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "90d440",
+        "hash": "27b487ef",
+        "encoded": "%5BDescription(%22Updated%20Business%20Associate%20Name%20(optional)%22)%5D",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "90d440",
+        "hash": "ecac4943",
+        "encoded": "string?%20baName%20=%20null,",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "90d440",
+        "hash": "30c53df7",
+        "encoded": "%5BDescription(%22Updated%20SAP%20Vendor%20ID%20(optional)%22)%5D",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "90d440",
+        "hash": "84bc6af0",
+        "encoded": "string?%20sapVendor%20=%20null,",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "90d440",
+        "hash": "76e92a10",
+        "encoded": "%5BDescription(%22Updated%20SAP%20Customer%20ID%20(optional)%22)%5D",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "90d440",
+        "hash": "d4ba7618",
+        "encoded": "string?%20sapCustomer%20=%20null,",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "90d440",
+        "hash": "c2417869",
+        "encoded": "%5BDescription(%22Updated%20SAP%20Company%20Code%20(optional)%22)%5D",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "90d440",
+        "hash": "661d0f4a",
+        "encoded": "int?%20sapCompanyCode%20=%20null)",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "90d440",
+        "hash": "b27709e4",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "90d440",
+        "hash": "9bbfdc41",
+        "encoded": "var%20updateData%20=%20new%20Dictionary%3Cstring,%20object?%3E();",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "90d440",
+        "hash": "630bee04",
+        "encoded": "if%20(!string.IsNullOrEmpty(baName))",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "90d440",
+        "hash": "bcf6b8b6",
+        "encoded": "updateData%5B%22BAName%22%5D%20=%20baName;",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "90d440",
+        "hash": "6dec0846",
+        "encoded": "if%20(!string.IsNullOrEmpty(sapVendor))",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "90d440",
+        "hash": "2801ca21",
+        "encoded": "updateData%5B%22SAPVendor%22%5D%20=%20sapVendor;",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "90d440",
+        "hash": "993317e4",
+        "encoded": "if%20(!string.IsNullOrEmpty(sapCustomer))",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "90d440",
+        "hash": "2b7ac092",
+        "encoded": "updateData%5B%22SAPCustomer%22%5D%20=%20sapCustomer;",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "90d440",
+        "hash": "d388db73",
+        "encoded": "if%20(sapCompanyCode.HasValue)",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "90d440",
+        "hash": "9afe6d5f",
+        "encoded": "updateData%5B%22SAPCompanyCode%22%5D%20=%20sapCompanyCode;",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "90d440",
+        "hash": "61fa8680",
+        "encoded": "var%20json%20=%20JsonSerializer.Serialize(updateData);",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "90d440",
+        "hash": "79b87836",
+        "encoded": "var%20content%20=%20new%20StringContent(json,%20Encoding.UTF8,%20%22application/json%22);",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "90d440",
+        "hash": "18e94a36",
+        "encoded": "var%20response%20=%20await%20_httpClient.PutAsync($%22%7B_baseUrl%7D/api/v1/%7BbaType%7D/%7BbaId%7D%22,%20content);",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "90d440",
+        "hash": "9ea092ec",
+        "encoded": "response.EnsureSuccessStatusCode();",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "90d440",
+        "hash": "92a9bd69",
+        "encoded": "var%20responseContent%20=%20await%20response.Content.ReadAsStringAsync();",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "90d440",
+        "hash": "469e0c4f",
+        "encoded": "var%20updateResponse%20=%20JsonSerializer.Deserialize%3CUpdateBusinessAssociateResponse%3E(responseContent,%20new%20JsonSerializerOptions%20%7B%20PropertyNameCaseInsensitive%20=%20true%20%7D);",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "90d440",
+        "hash": "2e93899a",
+        "encoded": "return%20updateResponse?.Data;",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "90d440",
+        "hash": "7e03f6ac",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "90d440",
+        "hash": "916a31d1",
+        "encoded": "%5BMcpServerTool,%20Description(%22Delete%20a%20business%20associate%22)%5D",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "90d440",
+        "hash": "e2f4678e",
+        "encoded": "public%20async%20Task%3Cbool%3E%20DeleteBusinessAssociate(",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "90d440",
+        "hash": "17343ba9",
+        "encoded": "%5BDescription(%22Business%20Associate%20Type%20(e.g.,%20'vendor',%20'customer')%22)%5D",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "90d440",
+        "hash": "d886c6f4",
+        "encoded": "string%20baType,",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "90d440",
+        "hash": "27617b41",
+        "encoded": "%5BDescription(%22Business%20Associate%20ID%22)%5D",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "90d440",
+        "hash": "0d8cf528",
+        "encoded": "int%20baId)",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "90d440",
+        "hash": "7d4d34bc",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "90d440",
+        "hash": "5b8bd8f2",
+        "encoded": "var%20response%20=%20await%20_httpClient.DeleteAsync($%22%7B_baseUrl%7D/api/v1/%7BbaType%7D/%7BbaId%7D%22);",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "90d440",
+        "hash": "aec3c6a4",
+        "encoded": "response.EnsureSuccessStatusCode();",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "90d440",
+        "hash": "9904e961",
+        "encoded": "var%20responseContent%20=%20await%20response.Content.ReadAsStringAsync();",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "90d440",
+        "hash": "139442e5",
+        "encoded": "var%20deleteResponse%20=%20JsonSerializer.Deserialize%3CDeleteBusinessAssociateResponse%3E(responseContent,%20new%20JsonSerializerOptions%20%7B%20PropertyNameCaseInsensitive%20=%20true%20%7D);",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "90d440",
+        "hash": "f2a869b3",
+        "encoded": "return%20deleteResponse?.Success%20??%20false;",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "90d440",
+        "hash": "c4560e5f",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "90d440",
+        "hash": "5513b7ee",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "90d440",
+        "hash": "2a3faa7c",
+        "encoded": "//%20Response%20classes%20for%20API%20operations",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "90d440",
+        "hash": "03945c6a",
+        "encoded": "public%20class%20CreateBusinessAssociateResponse",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "90d440",
+        "hash": "af48940d",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "90d440",
+        "hash": "d0cac856",
+        "encoded": "public%20bool%20Success%20%7B%20get;%20set;%20%7D",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "90d440",
+        "hash": "19f95617",
+        "encoded": "public%20BusinessAssociate?%20Data%20%7B%20get;%20set;%20%7D",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "90d440",
+        "hash": "948a755f",
+        "encoded": "public%20string?%20Message%20%7B%20get;%20set;%20%7D",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "90d440",
+        "hash": "59c23335",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "90d440",
+        "hash": "c598eadb",
+        "encoded": "public%20class%20UpdateBusinessAssociateResponse",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "90d440",
+        "hash": "37abe54b",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "138": {
+        "chunkId": "90d440",
+        "hash": "13a3f462",
+        "encoded": "public%20bool%20Success%20%7B%20get;%20set;%20%7D",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "90d440",
+        "hash": "7a3fda2a",
+        "encoded": "public%20BusinessAssociate?%20Data%20%7B%20get;%20set;%20%7D",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "90d440",
+        "hash": "d1cbf1fb",
+        "encoded": "public%20string?%20Message%20%7B%20get;%20set;%20%7D",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "90d440",
+        "hash": "4e2389e2",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "90d440",
+        "hash": "8df33e5b",
+        "encoded": "public%20class%20DeleteBusinessAssociateResponse",
+        "prevChunkIds": []
+      },
+      "144": {
+        "chunkId": "90d440",
+        "hash": "120783e2",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "145": {
+        "chunkId": "90d440",
+        "hash": "4a57650b",
+        "encoded": "public%20bool%20Success%20%7B%20get;%20set;%20%7D",
+        "prevChunkIds": []
+      },
+      "146": {
+        "chunkId": "90d440",
+        "hash": "9a4ae76a",
+        "encoded": "public%20string?%20Message%20%7B%20get;%20set;%20%7D",
+        "prevChunkIds": []
+      },
+      "147": {
+        "chunkId": "90d440",
+        "hash": "f787a6d1",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

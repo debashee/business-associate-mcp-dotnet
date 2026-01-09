@@ -1,0 +1,615 @@
+{
+  "McpServerSample\\USAGE.md": {
+    "filename": "USAGE.md",
+    "path": "McpServerSample\\USAGE.md",
+    "version": "1.1",
+    "chunks": {
+      "7547e7": {
+        "user": "Debashee Tarai",
+        "model": "claude-opus-4@20250514",
+        "timestamp": 1767954710,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "1.14.0",
+        "source": "agent",
+        "type": "agentEditTool",
+        "hash": "49a47b74",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": true
+      },
+      "3f356a": {
+        "user": "Debashee Tarai",
+        "model": "claude-opus-4@20250514",
+        "timestamp": 1767954711,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "1.14.0",
+        "source": "agent",
+        "type": "agentEditTool",
+        "hash": "c533e513",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "8": {
+        "chunkId": "7547e7",
+        "hash": "1c9af50b",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "3f356a",
+        "hash": "2f7fd8be",
+        "encoded": "##%20Available%20Tools",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "3f356a",
+        "hash": "faea771f",
+        "encoded": "###%20Calculator%20Tools",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "3f356a",
+        "hash": "296195b0",
+        "encoded": "1.%20**add**%20-%20Adds%20two%20numbers%20together",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "3f356a",
+        "hash": "88843f6e",
+        "encoded": "-%20Parameters:",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "3f356a",
+        "hash": "915b4ab9",
+        "encoded": "-%20%60a%60%20(double):%20First%20number",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "3f356a",
+        "hash": "7c83dab8",
+        "encoded": "-%20%60b%60%20(double):%20Second%20number",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "3f356a",
+        "hash": "64a3dfa9",
+        "encoded": "-%20Returns:%20Sum%20of%20the%20two%20numbers",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "3f356a",
+        "hash": "0f89bb62",
+        "encoded": "2.%20**subtract**%20-%20Subtracts%20the%20second%20number%20from%20the%20first",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "3f356a",
+        "hash": "94945a12",
+        "encoded": "-%20Parameters:",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "3f356a",
+        "hash": "a01be377",
+        "encoded": "-%20%60a%60%20(double):%20First%20number",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "3f356a",
+        "hash": "c0bb59b4",
+        "encoded": "-%20%60b%60%20(double):%20Second%20number",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "3f356a",
+        "hash": "cc529125",
+        "encoded": "-%20Returns:%20Difference%20between%20the%20two%20numbers",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "3f356a",
+        "hash": "00744be6",
+        "encoded": "3.%20**multiply**%20-%20Multiplies%20two%20numbers",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "3f356a",
+        "hash": "c34039a0",
+        "encoded": "-%20Parameters:",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "3f356a",
+        "hash": "667d823c",
+        "encoded": "-%20%60a%60%20(double):%20First%20number",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "3f356a",
+        "hash": "861c4589",
+        "encoded": "-%20%60b%60%20(double):%20Second%20number",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "3f356a",
+        "hash": "1e9557bd",
+        "encoded": "-%20Returns:%20Product%20of%20the%20two%20numbers",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "3f356a",
+        "hash": "82f64868",
+        "encoded": "4.%20**divide**%20-%20Divides%20the%20first%20number%20by%20the%20second",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "3f356a",
+        "hash": "0de95066",
+        "encoded": "-%20Parameters:",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "3f356a",
+        "hash": "db95af56",
+        "encoded": "-%20%60a%60%20(double):%20Numerator",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "3f356a",
+        "hash": "531c7bb9",
+        "encoded": "-%20%60b%60%20(double):%20Denominator",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "3f356a",
+        "hash": "48bfc54f",
+        "encoded": "-%20Returns:%20Quotient%20of%20the%20division",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "3f356a",
+        "hash": "afaab021",
+        "encoded": "-%20Note:%20Throws%20DivideByZeroException%20if%20denominator%20is%200",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "3f356a",
+        "hash": "f1b3850b",
+        "encoded": "###%20Business%20Associate%20Tools",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "3f356a",
+        "hash": "f500b5db",
+        "encoded": "1.%20**GetBusinessAssociates**%20-%20Get%20business%20associates%20by%20type",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "3f356a",
+        "hash": "33b2083f",
+        "encoded": "-%20Parameters:",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "3f356a",
+        "hash": "a212e23c",
+        "encoded": "-%20%60baType%60%20(string):%20Business%20Associate%20Type%20(e.g.,%20'vendor',%20'customer')",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "3f356a",
+        "hash": "0e78c5e0",
+        "encoded": "-%20Returns:%20List%20of%20BusinessAssociate%20objects",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "3f356a",
+        "hash": "c3c39aa8",
+        "encoded": "2.%20**CreateBusinessAssociate**%20-%20Create%20a%20new%20business%20associate",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "3f356a",
+        "hash": "17178b81",
+        "encoded": "-%20Parameters:",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "3f356a",
+        "hash": "d1e24e63",
+        "encoded": "-%20%60baType%60%20(string):%20Business%20Associate%20Type%20(e.g.,%20'vendor',%20'customer')",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "3f356a",
+        "hash": "f1bfffc8",
+        "encoded": "-%20%60baName%60%20(string):%20Business%20Associate%20Name",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "3f356a",
+        "hash": "d83a6daf",
+        "encoded": "-%20%60sapVendor%60%20(string,%20optional):%20SAP%20Vendor%20ID",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "3f356a",
+        "hash": "35199c46",
+        "encoded": "-%20%60sapCustomer%60%20(string,%20optional):%20SAP%20Customer%20ID",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "3f356a",
+        "hash": "d7e7b82c",
+        "encoded": "-%20%60sapCompanyCode%60%20(int?,%20optional):%20SAP%20Company%20Code",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "3f356a",
+        "hash": "18ce7000",
+        "encoded": "-%20Returns:%20Created%20BusinessAssociate%20object%20or%20null%20if%20failed",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "3f356a",
+        "hash": "6e6c7274",
+        "encoded": "3.%20**UpdateBusinessAssociate**%20-%20Update%20an%20existing%20business%20associate",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "3f356a",
+        "hash": "6701c469",
+        "encoded": "-%20Parameters:",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "3f356a",
+        "hash": "269db873",
+        "encoded": "-%20%60baType%60%20(string):%20Business%20Associate%20Type",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "3f356a",
+        "hash": "304db2b9",
+        "encoded": "-%20%60baId%60%20(int):%20Business%20Associate%20ID",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "3f356a",
+        "hash": "5f08a899",
+        "encoded": "-%20%60baName%60%20(string,%20optional):%20Updated%20Business%20Associate%20Name",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "3f356a",
+        "hash": "e89123df",
+        "encoded": "-%20%60sapVendor%60%20(string,%20optional):%20Updated%20SAP%20Vendor%20ID",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "3f356a",
+        "hash": "029ac247",
+        "encoded": "-%20%60sapCustomer%60%20(string,%20optional):%20Updated%20SAP%20Customer%20ID",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "3f356a",
+        "hash": "ae8902d3",
+        "encoded": "-%20%60sapCompanyCode%60%20(int?,%20optional):%20Updated%20SAP%20Company%20Code",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "3f356a",
+        "hash": "6a718b42",
+        "encoded": "-%20Returns:%20Updated%20BusinessAssociate%20object%20or%20null%20if%20failed",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "3f356a",
+        "hash": "799b999f",
+        "encoded": "4.%20**DeleteBusinessAssociate**%20-%20Delete%20a%20business%20associate",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "3f356a",
+        "hash": "c699643b",
+        "encoded": "-%20Parameters:",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "3f356a",
+        "hash": "d1eb94e2",
+        "encoded": "-%20%60baType%60%20(string):%20Business%20Associate%20Type",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "3f356a",
+        "hash": "318e71e2",
+        "encoded": "-%20%60baId%60%20(int):%20Business%20Associate%20ID",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "3f356a",
+        "hash": "48698d70",
+        "encoded": "-%20Returns:%20Boolean%20indicating%20success%20or%20failure",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "7547e7",
+        "hash": "7131ca56",
+        "encoded": "###%20Using%20C#%20Client",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "7547e7",
+        "hash": "bc9cf2d6",
+        "encoded": "%60%60%60csharp",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "7547e7",
+        "hash": "47e0d869",
+        "encoded": "using%20ModelContextProtocol.Client;",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "7547e7",
+        "hash": "a2d188db",
+        "encoded": "using%20ModelContextProtocol.Protocol.Transport;",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "7547e7",
+        "hash": "e9c58c64",
+        "encoded": "var%20endPoint%20=%20%22http://localhost:5267/sse%22;",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "7547e7",
+        "hash": "80ae6efd",
+        "encoded": "var%20clientTransport%20=%20new%20SseClientTransport(new%20SseClientTransportOptions",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "7547e7",
+        "hash": "47eb0fc4",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "7547e7",
+        "hash": "1d215810",
+        "encoded": "Endpoint%20=%20new%20Uri(endPoint)",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "7547e7",
+        "hash": "a8fc62b8",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "7547e7",
+        "hash": "3a620120",
+        "encoded": "var%20client%20=%20await%20McpClientFactory.CreateAsync(clientTransport);",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "7547e7",
+        "hash": "1703bcff",
+        "encoded": "//%20List%20available%20tools",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "7547e7",
+        "hash": "9327b79c",
+        "encoded": "var%20tools%20=%20await%20client.ListToolsAsync();",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "7547e7",
+        "hash": "a35bfac3",
+        "encoded": "//%20Example:%20Call%20calculator%20tool",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "7547e7",
+        "hash": "0e6ef4cd",
+        "encoded": "var%20result%20=%20await%20client.CallToolAsync(%22add%22,%20new%20Dictionary%3Cstring,%20object%3E",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "7547e7",
+        "hash": "1b5a3c6e",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "7547e7",
+        "hash": "7da8be8f",
+        "encoded": "%5B%22a%22%5D%20=%205.0,",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "7547e7",
+        "hash": "dce070c5",
+        "encoded": "%5B%22b%22%5D%20=%203.0",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "7547e7",
+        "hash": "aef6c5c9",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "7547e7",
+        "hash": "014bae13",
+        "encoded": "//%20Example:%20Get%20business%20associates",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "7547e7",
+        "hash": "30b53ae1",
+        "encoded": "var%20vendors%20=%20await%20client.CallToolAsync(%22GetBusinessAssociates%22,%20new%20Dictionary%3Cstring,%20object%3E",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "7547e7",
+        "hash": "f146eee9",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "7547e7",
+        "hash": "78a86c72",
+        "encoded": "%5B%22baType%22%5D%20=%20%22vendor%22",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "7547e7",
+        "hash": "3cff1aec",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "7547e7",
+        "hash": "d1868b52",
+        "encoded": "//%20Example:%20Create%20a%20new%20business%20associate",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "7547e7",
+        "hash": "2c441782",
+        "encoded": "var%20newBA%20=%20await%20client.CallToolAsync(%22CreateBusinessAssociate%22,%20new%20Dictionary%3Cstring,%20object%3E",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "7547e7",
+        "hash": "93c1331b",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "7547e7",
+        "hash": "f095036d",
+        "encoded": "%5B%22baType%22%5D%20=%20%22vendor%22,",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "7547e7",
+        "hash": "3964b4e0",
+        "encoded": "%5B%22baName%22%5D%20=%20%22Acme%20Corporation%22,",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "7547e7",
+        "hash": "0b8dabb7",
+        "encoded": "%5B%22sapVendor%22%5D%20=%20%22V12345%22,",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "7547e7",
+        "hash": "9371fbb7",
+        "encoded": "%5B%22sapCompanyCode%22%5D%20=%201000",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "7547e7",
+        "hash": "3b7ac76c",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "7547e7",
+        "hash": "a8a27242",
+        "encoded": "//%20Example:%20Update%20a%20business%20associate",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "7547e7",
+        "hash": "3b0ed4aa",
+        "encoded": "var%20updatedBA%20=%20await%20client.CallToolAsync(%22UpdateBusinessAssociate%22,%20new%20Dictionary%3Cstring,%20object%3E",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "7547e7",
+        "hash": "a52b138b",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "7547e7",
+        "hash": "09b57a39",
+        "encoded": "%5B%22baType%22%5D%20=%20%22vendor%22,",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "7547e7",
+        "hash": "052765be",
+        "encoded": "%5B%22baId%22%5D%20=%20123,",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "7547e7",
+        "hash": "22ef4c65",
+        "encoded": "%5B%22baName%22%5D%20=%20%22Acme%20Corp%20Updated%22,",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "7547e7",
+        "hash": "9c3c7edb",
+        "encoded": "%5B%22sapVendor%22%5D%20=%20%22V12345-NEW%22",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "7547e7",
+        "hash": "fc349fdd",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "7547e7",
+        "hash": "d8cf0d05",
+        "encoded": "//%20Example:%20Delete%20a%20business%20associate",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "7547e7",
+        "hash": "cb2b103b",
+        "encoded": "var%20deleteResult%20=%20await%20client.CallToolAsync(%22DeleteBusinessAssociate%22,%20new%20Dictionary%3Cstring,%20object%3E",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "7547e7",
+        "hash": "ebe819f4",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "7547e7",
+        "hash": "0b721dee",
+        "encoded": "%5B%22baType%22%5D%20=%20%22vendor%22,",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "7547e7",
+        "hash": "31293d57",
+        "encoded": "%5B%22baId%22%5D%20=%20123",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "7547e7",
+        "hash": "2be2aa2a",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

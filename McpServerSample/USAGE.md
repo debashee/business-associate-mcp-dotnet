@@ -46,33 +46,37 @@ The server exposes two main MCP endpoints:
    - Returns: Quotient of the division
    - Note: Throws DivideByZeroException if denominator is 0
 
-### String Tools
+### Business Associate Tools
 
-1. **concatenate** - Concatenates multiple strings together
+1. **GetBusinessAssociates** - Get business associates by type
    - Parameters:
-     - `strings` (string[]): Array of strings to concatenate
-     - `separator` (string, optional): Separator to use between strings
-   - Returns: Concatenated string
+     - `baType` (string): Business Associate Type (e.g., 'vendor', 'customer')
+   - Returns: List of BusinessAssociate objects
 
-2. **reverse** - Reverses a string
+2. **CreateBusinessAssociate** - Create a new business associate
    - Parameters:
-     - `input` (string): String to reverse
-   - Returns: Reversed string
+     - `baType` (string): Business Associate Type (e.g., 'vendor', 'customer')
+     - `baName` (string): Business Associate Name
+     - `sapVendor` (string, optional): SAP Vendor ID
+     - `sapCustomer` (string, optional): SAP Customer ID
+     - `sapCompanyCode` (int?, optional): SAP Company Code
+   - Returns: Created BusinessAssociate object or null if failed
 
-3. **toUpperCase** - Converts a string to uppercase
+3. **UpdateBusinessAssociate** - Update an existing business associate
    - Parameters:
-     - `input` (string): String to convert
-   - Returns: Uppercase string
+     - `baType` (string): Business Associate Type
+     - `baId` (int): Business Associate ID
+     - `baName` (string, optional): Updated Business Associate Name
+     - `sapVendor` (string, optional): Updated SAP Vendor ID
+     - `sapCustomer` (string, optional): Updated SAP Customer ID
+     - `sapCompanyCode` (int?, optional): Updated SAP Company Code
+   - Returns: Updated BusinessAssociate object or null if failed
 
-4. **toLowerCase** - Converts a string to lowercase
+4. **DeleteBusinessAssociate** - Delete a business associate
    - Parameters:
-     - `input` (string): String to convert
-   - Returns: Lowercase string
-
-5. **wordCount** - Counts the number of words in a string
-   - Parameters:
-     - `input` (string): String to count words in
-   - Returns: Number of words (integer)
+     - `baType` (string): Business Associate Type
+     - `baId` (int): Business Associate ID
+   - Returns: Boolean indicating success or failure
 
 ## Connecting with an MCP Client
 
@@ -93,11 +97,42 @@ var client = await McpClientFactory.CreateAsync(clientTransport);
 // List available tools
 var tools = await client.ListToolsAsync();
 
-// Call a tool
+// Example: Call calculator tool
 var result = await client.CallToolAsync("add", new Dictionary<string, object>
 {
     ["a"] = 5.0,
     ["b"] = 3.0
+});
+
+// Example: Get business associates
+var vendors = await client.CallToolAsync("GetBusinessAssociates", new Dictionary<string, object>
+{
+    ["baType"] = "vendor"
+});
+
+// Example: Create a new business associate
+var newBA = await client.CallToolAsync("CreateBusinessAssociate", new Dictionary<string, object>
+{
+    ["baType"] = "vendor",
+    ["baName"] = "Acme Corporation",
+    ["sapVendor"] = "V12345",
+    ["sapCompanyCode"] = 1000
+});
+
+// Example: Update a business associate
+var updatedBA = await client.CallToolAsync("UpdateBusinessAssociate", new Dictionary<string, object>
+{
+    ["baType"] = "vendor",
+    ["baId"] = 123,
+    ["baName"] = "Acme Corp Updated",
+    ["sapVendor"] = "V12345-NEW"
+});
+
+// Example: Delete a business associate
+var deleteResult = await client.CallToolAsync("DeleteBusinessAssociate", new Dictionary<string, object>
+{
+    ["baType"] = "vendor",
+    ["baId"] = 123
 });
 ```
 
@@ -127,9 +162,32 @@ The application can be containerized using .NET's built-in container support:
 dotnet publish --os linux --arch x64 -p:PublishProfile=DefaultContainer
 ```
 
+## Configuration
+
+### Business Associate API Endpoint
+
+The Business Associate Tools are configured to connect to a backend API. By default, it's set to:
+
+```csharp
+private readonly string _baseUrl = "http://localhost:3000";
+```
+
+To change this, modify the `_baseUrl` field in `BusinessAssociateTools.cs` or consider making it configurable through `appsettings.json`.
+
+### Required Backend API Endpoints
+
+The Business Associate API should implement these endpoints:
+
+- `GET /api/v1/{baType}` - Retrieve all business associates of a specific type
+- `POST /api/v1/{baType}` - Create a new business associate
+- `PUT /api/v1/{baType}/{baId}` - Update an existing business associate
+- `DELETE /api/v1/{baType}/{baId}` - Delete a business associate
+
 ## Notes
 
 - The MCP server uses Server-Sent Events (SSE) for streaming communication
 - All tools are automatically discovered via the `WithToolsFromAssembly()` method
 - Tools can be called asynchronously and support dependency injection
 - The server follows the Model Context Protocol specification for tool invocation
+- Business Associate Tools require the backend API to be running and accessible
+- HttpClient is registered as a service and injected into BusinessAssociateTools
